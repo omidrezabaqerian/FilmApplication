@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ir.omidrezabagherian.filmapplication.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comingSoonFragment"
+        android:name="ir.omidrezabagherian.filmapplication.ui.coming.ComingSoonFragment"
+        android:label="ComingSoonFragment" >
+        <action
+            android:id="@+id/action_comingSoonFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="ir.omidrezabagherian.filmapplication.ui.player.PlayerFragment"
+        android:label="PlayerFragment" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="ir.omidrezabagherian.filmapplication.ui.details.DetailsFragment"
+        android:label="DetailsFragment" />
+</navigation>
