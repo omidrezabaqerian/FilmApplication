@@ -1,6 +1,6 @@
 package ir.omidrezabagherian.filmapplication.data.model
 
-data class SampleMovie(
+data class SampleFilm(
     val adult: Boolean,
     val backdrop_path: String,
     val belongs_to_collection: Any,
