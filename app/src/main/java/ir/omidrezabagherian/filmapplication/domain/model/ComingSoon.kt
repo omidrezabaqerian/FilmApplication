@@ -1,4 +1,4 @@
-package ir.omidrezabagherian.filmapplication.data.model
+package ir.omidrezabagherian.filmapplication.domain.model
 
 data class ComingSoon(
     val dates: Dates,

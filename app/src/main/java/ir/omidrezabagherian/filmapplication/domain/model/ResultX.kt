@@ -1,6 +1,5 @@
-package ir.omidrezabagherian.filmapplication.data.model
+package ir.omidrezabagherian.filmapplication.domain.model
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 

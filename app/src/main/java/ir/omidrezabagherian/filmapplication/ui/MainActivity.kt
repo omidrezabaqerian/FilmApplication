@@ -3,9 +3,11 @@ package ir.omidrezabagherian.filmapplication.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import ir.omidrezabagherian.filmapplication.R
 import ir.omidrezabagherian.filmapplication.databinding.ActivityMainBinding
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding

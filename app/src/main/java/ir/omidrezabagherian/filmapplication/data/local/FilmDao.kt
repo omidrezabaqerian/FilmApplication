@@ -4,8 +4,8 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import ir.omidrezabagherian.filmapplication.data.model.Result
-import ir.omidrezabagherian.filmapplication.data.model.ResultX
+import ir.omidrezabagherian.filmapplication.domain.model.Result
+import ir.omidrezabagherian.filmapplication.domain.model.ResultX
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -14,7 +14,7 @@ interface FilmDao {
     suspend fun insertFilmList(vararg result: Result)
 
     @Query("SELECT * FROM film_table")
-    fun getAllFilm(): Flow<List<ResultX>>
+    fun getAllFilm(): Flow<List<Result>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertComingList(vararg result: Result)
