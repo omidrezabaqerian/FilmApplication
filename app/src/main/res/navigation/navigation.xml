@@ -27,5 +27,9 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="ir.omidrezabagherian.filmapplication.ui.details.DetailsFragment"
-        android:label="DetailsFragment" />
+        android:label="DetailsFragment" >
+        <argument
+            android:name="filmID"
+            app:argType="integer" />
+    </fragment>
 </navigation>

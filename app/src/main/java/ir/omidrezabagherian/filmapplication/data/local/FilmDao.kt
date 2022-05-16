@@ -17,7 +17,7 @@ interface FilmDao {
     fun getAllFilm(): Flow<List<Result>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertComingList(vararg result: Result)
+    suspend fun insertComingList(vararg resultX: ResultX)
 
     @Query("SELECT * FROM coming_table")
     fun getAllComing(): Flow<List<ResultX>>
